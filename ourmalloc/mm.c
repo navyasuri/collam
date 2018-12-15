@@ -9,6 +9,33 @@
  * NOTE TO STUDENTS: Replace this header comment with your own header
  * comment that gives a high level description of your solution.
  */
+
+
+
+/*
+
+We will be using an implicit bidirectional list allocation. 
+The fitting policy is first fit. We will use immediate coalescing.
+
+*/
+
+/*
+MACROS (the #defines)
+// Get and set will be used since we have so many void pointers flying around
+get - get the address stored at a pointer
+set - set the value to a pointer
+pack - bitwise operation to merge size and allocated bit
+
+
+FUNCTIONS (actual functions)
+coalesce function - checks all cases and coalesces accordingly
+heap checker - make sure alles gut
+first fitter - to find the free block to fit, else return end of heap/extend heap accordingly
+
+*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
