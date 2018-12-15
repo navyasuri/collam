@@ -31,6 +31,8 @@ FUNCTIONS (actual functions)
 coalesce function - checks all cases and coalesces accordingly
 heap checker - make sure alles gut
 first fitter - to find the free block to fit, else return end of heap/extend heap accordingly
+extend heap - increase size of heap according to how request from malloc, return pointer. 
+allocate free - given pointer to free block, allocates that and splits remainder of free block. 
 
 */
 
